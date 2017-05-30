@@ -81,7 +81,7 @@ def lose():
         elif d == "묵":
             print("졌습니다")
             print()
-            print(--------------------)
+            print("--------------------")
 
         elif d == "보":
             lose()

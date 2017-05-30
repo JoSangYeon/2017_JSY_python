@@ -6,14 +6,13 @@ def get_subdir(path, ret_list):
     subdir_list = []
     try:
         dir_files = os.listdir(path)
-        print(dir_files)
     except:
         return subdir_list
     for each in dir_files:
         full_name = path + '/' + each
         if os.path.isdir(full_name):
             subdir_list.append(full_name + '/')
-        if ~(full_name.find(".txt") == -1):
+        if ~(full_name.find(".py") == -1):
             ret_list.append(full_name)
     return subdir_list
 
