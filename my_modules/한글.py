@@ -1,3 +1,4 @@
+from 한글 import *
 def 출력(string):
     return print(string)
 def 만약():
