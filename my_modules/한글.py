@@ -21,7 +21,7 @@ def 실수(string):
 # Replace 'range()'
 def 범위(*a):
     if ((len(a) == 0) or (len(a) >= 4)):
-        return TypeError
+        return ValueError
     if len(a) == 1:
         return range(a[0])
     if len(a) == 2:
